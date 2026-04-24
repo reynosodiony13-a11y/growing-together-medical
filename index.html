@@ -251,7 +251,7 @@
   .team-hero-label .label{font-size:11px;letter-spacing:.25em;text-transform:uppercase;opacity:.75;margin-bottom:8px}
   .team-hero-label h3{font-family:'Instrument Serif',serif;font-size:clamp(28px,4vw,48px);font-weight:400;letter-spacing:-.02em;max-width:600px;line-height:1.05}
 
-  .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
+  .team-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
   .person{display:flex;flex-direction:column;gap:14px}
   .person .avatar{
     aspect-ratio:4/5;border-radius:4px;overflow:hidden;background:#eee;
@@ -274,12 +274,12 @@
     position:absolute;left:12px;bottom:12px;font-size:10px;letter-spacing:.18em;text-transform:uppercase;
     background:rgba(255,255,255,.85);padding:5px 10px;border-radius:999px;color:#000;font-family:'Inter',sans-serif;
   }
-  .person h4{font-family:'Instrument Serif',serif;font-weight:400;font-size:22px;letter-spacing:-.015em;color:#000;line-height:1.1}
-  .person .role{font-size:12.5px;color:var(--muted);letter-spacing:.06em}
-  .person.doctor h4{font-size:28px}
+  .person h4{font-family:'Instrument Serif',serif;font-weight:400;font-size:20px;letter-spacing:-.015em;color:#000;line-height:1.1}
+  .person .role{font-size:12px;color:var(--muted);letter-spacing:.06em;line-height:1.4}
+  .person.doctor h4{font-size:22px}
   .person.doctor .avatar{background:linear-gradient(150deg,#dde6f7,#efe6d6 50%,#f3d5c4)}
-  @media(max-width:900px){.team-grid{grid-template-columns:repeat(2,1fr)}}
-  @media(max-width:520px){.team-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:1100px){.team-grid{grid-template-columns:repeat(3,1fr);gap:24px}.person h4{font-size:22px}.person.doctor h4{font-size:26px}}
+  @media(max-width:620px){.team-grid{grid-template-columns:repeat(2,1fr);gap:20px}}
 
   /* ---- booking ---- */
   .booking{background:#000;color:#fff;padding:140px 0}
@@ -754,6 +754,16 @@
       <div class="person reveal d3">
         <div class="avatar has-photo"><img src="images/team/rosario.jpg" alt="Rosario"></div>
         <h4>Rosario</h4>
+        <div class="role">Medical Assistant · Bilingual</div>
+      </div>
+      <div class="person reveal d4">
+        <div class="avatar has-photo"><img src="images/team/alassandra.jpg" alt="Alassandra"></div>
+        <h4>Alassandra</h4>
+        <div class="role">Front Desk · Bilingual</div>
+      </div>
+      <div class="person reveal d4">
+        <div class="avatar has-photo"><img src="images/team/yessica.jpg" alt="Yessica"></div>
+        <h4>Yessica</h4>
         <div class="role">Medical Assistant · Bilingual</div>
       </div>
     </div>
