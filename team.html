@@ -262,6 +262,12 @@
     content:"";position:absolute;inset:0;
     background:repeating-linear-gradient(135deg,transparent 0 18px,rgba(0,0,0,.04) 18px 19px);
   }
+  .person .avatar.has-photo::before{display:none}
+  .person .avatar img{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%;
+    transition:transform .6s cubic-bezier(.2,.7,.2,1);
+  }
+  .person:hover .avatar img{transform:scale(1.04)}
   .person .avatar .initial{
     position:absolute;inset:0;display:grid;place-items:center;
     font-family:'Instrument Serif',serif;font-size:56px;color:rgba(0,0,0,.5);font-style:italic;
@@ -270,6 +276,7 @@
     position:absolute;left:12px;bottom:12px;font-size:10px;letter-spacing:.18em;text-transform:uppercase;
     background:rgba(255,255,255,.85);padding:5px 10px;border-radius:999px;color:#000;font-family:'Inter',sans-serif;
   }
+  .person .bio{font-size:13.5px;color:var(--muted);line-height:1.55;margin-top:4px}
   .person h4{font-family:'Instrument Serif',serif;font-weight:400;font-size:22px;letter-spacing:-.015em;color:#000;line-height:1.1}
   .person .role{font-size:12.5px;color:var(--muted);letter-spacing:.06em}
   .person.doctor h4{font-size:28px}
@@ -541,38 +548,44 @@
     </div>
     <div class="sec-head reveal"><span class="num">01</span><span class="tag">Providers</span><span class="rule"></span></div>
     <div class="team-grid">
-      
       <div class="person doctor reveal">
-        <div class="avatar"><div class="initial">M</div><div class="ph">Photo soon</div></div>
-        <h4>Dr. Maria Quezada</h4><div class="role">MD, F.A.A.P. · Pediatrician &amp; Founder</div>
+        <div class="avatar has-photo"><img src="images/team/maria.jpg" alt="Dr. Maria Quezada"></div>
+        <h4>Dr. Maria Quezada</h4>
+        <div class="role">MD, F.A.A.P. · Pediatrician &amp; Founder</div>
+        <p class="bio">Board-certified pediatrician and founder of the practice. Fluent in English and Spanish, with a calm bedside manner that puts children (and parents) at ease from the first visit.</p>
       </div>
       <div class="person doctor reveal">
-        <div class="avatar"><div class="initial">K</div><div class="ph">Photo soon</div></div>
-        <h4>Kate Dunphy</h4><div class="role">DNP, CPNP-PC · Pediatric Nurse Practitioner</div>
+        <div class="avatar has-photo"><img src="images/team/kate.jpg" alt="Kate Dunphy, DNP, CPNP-PC"></div>
+        <h4>Kate Dunphy</h4>
+        <div class="role">DNP, CPNP-PC · Pediatric Nurse Practitioner</div>
+        <p class="bio">Doctorate-prepared pediatric nurse practitioner. Specializes in newborn care, well-child visits, and helping first-time parents navigate the early months with confidence.</p>
       </div>
     </div>
     <div class="sec-head reveal" style="margin-top:80px"><span class="num">02</span><span class="tag">Office &amp; Care Team</span><span class="rule"></span></div>
     <div class="team-grid">
-      
       <div class="person reveal">
-        <div class="avatar"><div class="initial">S</div><div class="ph">Photo soon</div></div>
-        <h4>Sofia R.</h4><div class="role">Office Manager · Bilingual</div>
+        <div class="avatar has-photo"><img src="images/team/rosario.jpg" alt="Rosario"></div>
+        <h4>Rosario</h4>
+        <div class="role">Medical Assistant · Bilingual</div>
+        <p class="bio">Greets every family with warmth and handles vitals, vaccines, and visit prep. Bilingual in English and Spanish.</p>
       </div>
       <div class="person reveal">
-        <div class="avatar"><div class="initial">E</div><div class="ph">Photo soon</div></div>
-        <h4>Elena M.</h4><div class="role">Medical Assistant · Bilingual</div>
+        <div class="avatar has-photo"><img src="images/team/alassandra.jpg" alt="Alassandra"></div>
+        <h4>Alassandra</h4>
+        <div class="role">Front Desk · Bilingual</div>
+        <p class="bio">The first smile you'll see. Manages check-in, scheduling, and makes sure every family leaves feeling taken care of.</p>
       </div>
       <div class="person reveal">
-        <div class="avatar"><div class="initial">C</div><div class="ph">Photo soon</div></div>
-        <h4>Carla J.</h4><div class="role">Front Desk · Bilingual</div>
+        <div class="avatar has-photo"><img src="images/team/teresa.jpg" alt="Teresa"></div>
+        <h4>Teresa</h4>
+        <div class="role">Office Manager · Bilingual</div>
+        <p class="bio">Keeps the practice running smoothly — insurance, records, follow-ups. If something needs to happen, Teresa makes it happen.</p>
       </div>
       <div class="person reveal">
-        <div class="avatar"><div class="initial">D</div><div class="ph">Photo soon</div></div>
-        <h4>Daniela V.</h4><div class="role">Billing &amp; Insurance</div>
-      </div>
-      <div class="person reveal">
-        <div class="avatar"><div class="initial">R</div><div class="ph">Photo soon</div></div>
-        <h4>Rosa T.</h4><div class="role">Medical Assistant</div>
+        <div class="avatar has-photo"><img src="images/team/yessica.jpg" alt="Yessica"></div>
+        <h4>Yessica</h4>
+        <div class="role">Medical Assistant · Bilingual</div>
+        <p class="bio">Supports visits from start to finish — vaccines, lab draws, and making the clinical side feel easy and unhurried.</p>
       </div>
     </div>
   </div>
